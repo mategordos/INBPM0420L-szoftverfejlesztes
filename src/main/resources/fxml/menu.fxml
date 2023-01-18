@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pebble.gui.MenuController">
+    <top>
+        <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-padding: 20;" text="JavaFX Pebble Game"
+               BorderPane.alignment="CENTER">
+            <font>
+                <Font name="Space Bd BT Bold" size="33.0"/>
+            </font>
+        </Label>
+    </top>
+    <left>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <center>
+                <TextField fx:id="firstPlayer" alignment="CENTER" promptText="Enter a name.."
+                           BorderPane.alignment="CENTER"/>
+            </center>
+            <top>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-label-padding: 20;" text="Player 1"
+                       textAlignment="CENTER" textFill="#ee1111" underline="true" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Space Bd BT Bold" size="25.0"/>
+                    </font>
+                </Label>
+            </top>
+        </BorderPane>
+    </left>
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <center>
+                <Button onAction="#onStart" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                        text="Start Game" textAlignment="CENTER" textFill="#24b92e" BorderPane.alignment="CENTER"/>
+            </center>
+            <bottom>
+                <Label text="Last to remove a pebble loses!" textAlignment="CENTER" textFill="#c63535" wrapText="true"
+                       BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Space Bd BT Bold" size="21.0"/>
+                    </font>
+                </Label>
+            </bottom>
+            <top>
+                <Label text="(Left click to select pebbles, end turn to confirm move)" textAlignment="CENTER"
+                       textFill="#cc3333" wrapText="true" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Space Bd BT Bold" size="12.0"/>
+                    </font>
+                </Label>
+            </top>
+        </BorderPane>
+    </center>
+    <right>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <center>
+                <TextField fx:id="secondPlayer" alignment="CENTER" promptText="Enter a name.."
+                           BorderPane.alignment="CENTER"/>
+            </center>
+            <top>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-label-padding: 20;" text="Player 2"
+                       textFill="#2012e4" underline="true" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Space Bd BT Bold" size="25.0"/>
+                    </font>
+                </Label>
+            </top>
+        </BorderPane>
+    </right>
+</BorderPane>

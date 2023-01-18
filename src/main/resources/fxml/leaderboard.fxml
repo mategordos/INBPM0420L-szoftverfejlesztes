@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800"
+            prefWidth="800" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+
+    <top>
+        <Label fx:id="winnerName" alignment="CENTER"/>
+    </top>
+    <BorderPane.margin>
+        <Insets bottom="10" left="10" right="10" top="10"/>
+    </BorderPane.margin>
+    <center>
+        <TableView fx:id="leaderBoard" prefHeight="600" prefWidth="600" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="firstPlayerName" editable="false" prefWidth="200">
+                    <graphic>
+                        <Label text="Player 1">
+                            <font>
+                                <Font name="Space Bd BT Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                    </graphic>
+                </TableColumn>
+                <TableColumn fx:id="secondPlayerName" editable="false" prefWidth="200">
+                    <graphic>
+                        <Label text="Player 2">
+                            <font>
+                                <Font name="Space Bd BT Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                    </graphic>
+                </TableColumn>
+                <TableColumn fx:id="identityOfWinner" editable="false" prefWidth="200">
+                    <graphic>
+                        <Label text="Winner of the game">
+                            <font>
+                                <Font name="Space Bd BT Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                    </graphic>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <Button fx:id="back">Back</Button>
+    </bottom>
+</BorderPane>
